@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     android:versionCode="1"
-    android:versionName="1.0"
+    android:versionName="1.0.0"
     package="com.arvicxyz.xamarinexceptionless">
     <uses-sdk android:minSdkVersion="15" />
-    <application android:label="XamarinExceptionless">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application android:label="Exceptionless">
     </application>
 </manifest>

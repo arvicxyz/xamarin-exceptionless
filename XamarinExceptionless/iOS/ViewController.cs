@@ -1,5 +1,4 @@
 ﻿using System;
-
 using UIKit;
 
 namespace XamarinExceptionless.iOS
@@ -16,7 +15,6 @@ namespace XamarinExceptionless.iOS
         {
             base.ViewDidLoad();
 
-            // Perform any additional setup after loading the view, typically from a nib.
             Button.AccessibilityIdentifier = "myButton";
             Button.TouchUpInside += delegate
             {
@@ -28,7 +26,6 @@ namespace XamarinExceptionless.iOS
         public override void DidReceiveMemoryWarning()
         {
             base.DidReceiveMemoryWarning();
-            // Release any cached data, images, etc that aren't in use.        
         }
     }
 }
