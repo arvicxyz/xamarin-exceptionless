@@ -1,25 +1,10 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Java.Lang;
 
 namespace XamarinExceptionless.Droid
 {
-    public class CustomExceptionHandler : Thread.IUncaughtExceptionHandler
+    public class CustomExceptionHandler : Java.Lang.Object, Thread.IUncaughtExceptionHandler
     {
-        public CustomExceptionHandler()
-        {
-        }
-
-        public IntPtr Handle
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-
         public void UncaughtException(Thread t, Throwable e)
         {
             // Submit an exception to the Exceptionless server
